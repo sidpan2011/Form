@@ -1,0 +1,157 @@
+html,
+body {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  margin: 0 300px;
+}
+.app h1 {
+  font-weight: 500;
+}
+.notmatch {
+  display: none;
+  font-weight: 500;
+  color: red;
+  padding: 15px;
+  border-left: 6px solid red;
+}
+.notpass {
+  display: none;
+  font-weight: 500;
+  color: red;
+  padding: 15px;
+  border-left: 6px solid red;
+}
+.minlength {
+  display: none;
+  font-weight: 500;
+  color: red;
+  padding: 15px;
+  border-left: 6px solid red;
+}
+.mob-error{
+  display: none;
+  font-weight: 500;
+  color: red;
+  padding: 15px;
+  border-left: 6px solid red;
+}
+.app h4 {
+  display: none;
+  padding: 15px;
+  border-left: 6px solid red;
+  color: red;
+  font-weight: 500;
+}
+form p {
+  font-weight: bold;
+}
+form p span {
+  display: none;
+  color: red;
+  font-weight: 500;
+}
+form input {
+  font-size: 1rem;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 13px;
+  width: 100%;
+  background-color: rgba(238, 238, 238, 0.774);
+}
+form select {
+  height: 30px;
+  width: 150px;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+form select option {
+  font-size: 1rem;
+  padding: 10px;
+}
+.checkbox input {
+  width: min-content;
+}
+input[type=url]{
+  color: blue;
+}
+::placeholder{
+  font-style: italic;
+}
+form button {
+  display: flex;
+  padding: 10px;
+  margin: 20px 0;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  font-size: 1rem;
+  background-color: #1288ef;
+  color: white;
+}
+button:hover {
+  background-color: #218ae6ce;
+}
+table {
+  margin-top: 30px;
+  font-size: 1rem;
+  width: 100%;
+  background-color: rgba(238, 238, 238, 0.774);
+  border-spacing: 0;
+}
+
+th{
+  padding: 10px;
+  border-right: 1px solid rgb(172, 172, 172);
+  border-bottom: 1px solid rgb(172, 172, 172);
+  border-top: 1px solid rgb(172, 172, 172);
+}
+td {
+  text-align: center;
+  padding: 4px;
+  border-right: 1px solid rgb(172, 172, 172);
+  border-bottom: 1px solid rgb(172, 172, 172);
+}
+.uploadImg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  border-radius: 4px;
+  width: auto;
+  max-width: 30%;
+}
+.uploadDoc{
+  margin-top: 10px;
+  width: 100%;
+  height: 400px;
+  display: none;
+}
+img{
+  width: 100%;
+}
+iframe{
+  width: fit-content;
+}
+button{
+  padding: 10px;
+  border: 1px solid transparent;
+  background-color: #1288ef;
+  border-radius: 4px;
+  color: white;
+  margin: 5px 0;
+  cursor: pointer;
+}
+button:nth-child(2){
+  background-color: red;
+}
+button:nth-child(2):hover{
+  background-color: rgba(255, 0, 0, 0.753);
+}
