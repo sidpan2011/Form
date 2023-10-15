@@ -518,8 +518,13 @@ function updateTableRow(row, data) {
 
 function handleDelete(button) {
     let row = button.closest("tr")
+    let table = document.querySelector(".formtable")
+    let tableData = document.querySelector("tbody")
+    let tableHead = document.querySelector("thead")
     if (row) {
         row.remove()
+        if (tableData.rows.length === 1) {
+            tableHead.querySelector("tr").remove();
+        }
     }
 }
-
