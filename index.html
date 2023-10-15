@@ -21,18 +21,19 @@
         <input type="tel" name="phone"/>
         <p class="mob-error">Mobile Number should be 10 digit.</p>
         <p>Choose Country* <span class="error">This field is required</span></p>
-        <select name="" id="list1" required>
+        <select name="" id="list1" onchange="updateStates()">
           <option value="select">--Select--</option>
           <option value="India">India</option>
           <option value="USA">United States</option>
-          <option value="Zimbabwe">Zimbabwe</option>
-          <option value="Yemen">Yemen</option>
-          <option value="Qatar">Qatar</option>
-          <option value="Japan">Japan</option>
-          <option value="Russia">Russia</option>
         </select>
-        <p>Enter City* <span class="error">This field is required</span></p>
-        <input id="city" type="text" required />
+        <p>Choose State* <span class="error">This field is required</span></p>
+        <select name="" id="list-state" disabled onchange="updateCities()">
+          <option value="select">--Select--</option>
+        </select>
+        <p>Choose City* <span class="error">This field is required</span></p>
+        <select name="" id="list-city" disabled>
+          <option value="select">--Select--</option>
+        </select>
         <p>Enter Password* <span class="error">This field is required</span></p>
         <input type="password" id="pwd" required />
         <p>
@@ -54,10 +55,8 @@
         <p>Upload Resume* <span class="error">This field is required</span></p>
         <input
           type="file"
-          name=""
           id="file1"
           accept=".doc, .docx, .pdf"
-          required
           onchange="handleFileRead()"
         />
         <iframe class="uploadDoc" src="" frameborder="0"></iframe>
@@ -68,10 +67,8 @@
         <input
           class="image"
           type="file"
-          name=""
           id="file2"
           accept="image/*"
-          required
           onchange="handleImageRead()"
         />
         <img class="uploadImg" src="" alt="">
