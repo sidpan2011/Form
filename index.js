@@ -114,6 +114,7 @@ function handleSubmit(event) {
     const mobError = document.querySelector(".mob-error")
     const title = document.querySelector("h4");
     const require = document.querySelectorAll(".error");
+    const emailError = document.querySelector(".email-error")
 
     const imagePreview = document.querySelector(".uploadImg");
     const docPreview = document.querySelector(".uploadDoc");
@@ -132,7 +133,11 @@ function handleSubmit(event) {
     if (email === "") {
         title.style.display = "block";
         require[1].style.display = "inline-block";
-    } else {
+    }else if(!/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)){
+        require[1].style.display = "none"
+        emailError.style.display = "block"
+    } 
+    else {
         require[1].style.display = "none";
     }
     if (phone === "") {

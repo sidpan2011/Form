@@ -43,6 +43,13 @@ body {
   padding: 15px;
   border-left: 6px solid red;
 }
+.email-error{
+  display: none;
+  font-weight: 500;
+  color: red;
+  padding: 15px;
+  border-left: 6px solid red;
+}
 .app h4 {
   display: none;
   padding: 15px;
