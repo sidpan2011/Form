@@ -136,9 +136,11 @@ function handleSubmit(event) {
     }else if(!/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)){
         require[1].style.display = "none"
         emailError.style.display = "block"
+        document.querySelector("input[name='email']").focus()
     } 
     else {
         require[1].style.display = "none";
+        emailError.style.display = "none"
     }
     if (phone === "") {
         title.style.display = "block";
