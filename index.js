@@ -6,7 +6,7 @@ function updateStates(){
     const stateSelect = document.getElementById("list-state")
     stateSelect.innerHTML = ""
     if(counrtySelect === "India"){ 
-        const indiaStates = ["--Select--", "Assam","Delhi","Haryana"]
+        const indiaStates = ["select", "Assam","Delhi","Haryana"]
         indiaStates.forEach(state => {
             const option = document.createElement("option")
             option.text = state
@@ -14,7 +14,7 @@ function updateStates(){
         })
         stateSelect.disabled = false
     }else if(counrtySelect === "USA"){
-        const usaStates = ["--Select--" ,"New York", "California"]
+        const usaStates = ["select" ,"New York", "California"]
         usaStates.forEach(state => {
             const option = document.createElement("option")
             option.text = state
@@ -35,7 +35,7 @@ function updateCities(){
 
     if(counrtySelect === "India"){
         if(stateSelect === "Assam"){
-            const assamCities = ["--Select--", "Guwahati", "Sonitpur"]
+            const assamCities = ["select", "Guwahati", "Sonitpur"]
             assamCities.forEach(city => {
                 const option = document.createElement("option")
                 option.text = city
@@ -43,7 +43,7 @@ function updateCities(){
             })
             citySelect.disabled = false
         }else if(stateSelect === "Delhi"){
-            const delhiCities = ["--Select--", "Karol Bagh", "Maujpur", "Hauzkhaas"]
+            const delhiCities = ["select", "Karol Bagh", "Maujpur", "Hauzkhaas"]
             delhiCities.forEach(city => {
                 const option = document.createElement("option")
                 option.text = city
@@ -51,7 +51,7 @@ function updateCities(){
             })
             citySelect.disabled = false
         }else if(stateSelect === "Haryana"){
-            const haryanaCities = ["--Select--", "Gurugram", "Sonipat", "Rohtak"]
+            const haryanaCities = ["select", "Gurugram", "Sonipat", "Rohtak"]
             haryanaCities.forEach(city => {
                 const option = document.createElement("option")
                 option.text = city
@@ -63,7 +63,7 @@ function updateCities(){
         }
     }else if(counrtySelect === "USA"){
         if(stateSelect === "New York"){
-            const nyCities = ["--Select--", "New York City", "Buffalo"]
+            const nyCities = ["select", "New York City", "Buffalo"]
             nyCities.forEach(city => {
                 const option = document.createElement("option")
                 option.text = city
@@ -71,7 +71,7 @@ function updateCities(){
             })
             citySelect.disabled = false
         }else if(stateSelect === "California"){ 
-            const caCities = ["--Select", "Los Angeles", "San Francisco", "San Diego"]
+            const caCities = ["select", "Los Angeles", "San Francisco", "San Diego"]
             caCities.forEach(city => {
                 const option = document.createElement("option")
                 option.text = city
